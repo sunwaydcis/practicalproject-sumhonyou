@@ -104,7 +104,7 @@ class PersonEditDialogController ():
         headerText = "Please correct invalid fields"
         contentText = errorMessage
       alert.showAndWait()
-        //Two way to fix the ShowAndWait: either call the alert object again and indent to left means outside the alert properties.
+//        Two-way to fix the ShowAndWait: either call the alert object again and indent to left means outside the alert properties.
         // 2nd way:
       false
     end if //end if is like mention is end of the if..else statement in scala 3 version
