@@ -7,7 +7,7 @@ import ch.makery.address.util.DateUtil._
 import scalikejdbc._
 import scala.util.{ Try, Success, Failure }
 
-//To describe Person instance and do not include any database related code
+
 //Every person object will have save and delete
 class Person (val firstNameS : String, val lastNameS : String) extends Database :
   def this()     = this(null, null)
@@ -22,7 +22,7 @@ class Person (val firstNameS : String, val lastNameS : String) extends Database 
   def save() : Try[Int] =
     if (!(isExist)) then
       Try(DB autoCommit { implicit session =>
-        //insert new person recods
+        //insert new person records
         sql"""
       insert into person (firstName, lastName,
        street, postalCode, city, date) values
@@ -68,7 +68,7 @@ class Person (val firstNameS : String, val lastNameS : String) extends Database 
       case Some(x) => true
       case None => false
 
-
+//To describe Person instance and do not include any database related code
 //For all person can initialise database is not instance
 object Person extends Database:
   def apply (

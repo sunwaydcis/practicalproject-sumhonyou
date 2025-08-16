@@ -31,7 +31,7 @@ class PersonEditDialogController ():
   var         okClicked             = false
 
   def person = __person
-  def person_=(x : Person): Unit =
+  def person_(x : Person): Unit =
     __person = x //update the data field with the parsing value
 
     //Once the person have value, then all text field will fill with value and assign back to the variable that defined inside the person object

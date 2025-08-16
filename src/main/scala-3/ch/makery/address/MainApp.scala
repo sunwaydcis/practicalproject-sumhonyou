@@ -62,6 +62,7 @@ object MainApp extends JFXApp3:
 
     // call to display PersonOverview when app start
     showPersonOverview()
+
   // actions for display person overview window
   def showPersonOverview(): Unit =
     val resource = getClass.getResource("view/PersonOverview.fxml")

@@ -59,7 +59,7 @@
                         <Label fx:id="birthdayLabel" layoutX="10.0" layoutY="16.0" styleClass="label-bright" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="5" />
                      </children>
                   </GridPane>
-                  <ButtonBar layoutX="145.0" layoutY="258.0" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="5.0">
+                  <ButtonBar layoutX="145.0" layoutY="258.0" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="7.0">
                     <buttons>
                       <Button mnemonicParsing="false" onAction="#handleNewPerson" text="New..." />
                         <Button layoutX="135.0" layoutY="17.0" mnemonicParsing="false" onAction="#handleEditPerson" text="Edit..." />
